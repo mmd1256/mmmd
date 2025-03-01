@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید | فروشگاه کفش امیری</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="سبد.css">
+    <link rel="stylesheet" href="سبد.css">
+</head>
+<body>
+    <!-- هدر سایت -->
+
+    <!-- مسیر دسترسی -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="/">خانه</a></li>
+                <li>سبد خرید</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- سبد خرید -->
+    <section class="cart-page">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- جدول سبد خرید -->
+                <div class="cart-main">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>محصول</th>
+                                <th>قیمت</th>
+                                <th>تعداد</th>
+                                <th>جمع</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart-item">
+                                <td class="product-info">
+                                    <img src="images/products/shoe1-thumb.jpg" alt="کفش نایک">
+                                    <div class="product-details">
+                                        <h3>کفش نایک ایر مکس</h3>
+                                        <div class="product-meta">
+                                            <span>رنگ: مشکی</span>
+                                            <span>سایز: 42</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="product-price">2,500,000 تومان</td>
+                                <td class="product-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn minus">-</button>
+                                        <input type="number" value="1" min="1" max="10">
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="product-subtotal">2,500,000 تومان</td>
+                                <td class="product-remove">
+                                    <button class="remove-item" data-id="1">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- تکرار برای محصولات دیگر -->
+                        </tbody>
+                    </table>
+
+                    <div class="cart-actions">
+                        <div class="coupon">
+                            <input type="text" placeholder="کد تخفیف">
+                            <button class="apply-coupon">اعمال کد تخفیف</button>
+                        </div>
+                        <button class="update-cart">بروزرسانی سبد خرید</button>
+                    </div>
+                </div>
+
+                <!-- خلاصه سفارش -->
+                <div class="cart-sidebar">
+                    <div class="order-summary">
+                        <h3>خلاصه سفارش</h3>
+                        
+                        <div class="summary-row">
+                            <span>جمع کل</span>
+                            <span>2,500,000 تومان</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>هزینه ارسال</span>
+                            <span>رایگان</span>
+                        </div>
+
+                        <div class="summary-row discount">
+                            <span>تخفیف</span>
+                            <span>0 تومان</span>
+                        </div>
+
+                        <div class="summary-row total">
+                            <span>مبلغ قابل پرداخت</span>
+                            <span>2,500,000 تومان</span>
+                        </div>
+
+                        <button class="checkout-button">ادامه فرآیند خرید</button>
+                    </div>
+
+                    <div class="shipping-notice">
+                        <i class="fas fa-truck"></i>
+                        <p>برای سفارش‌های بالای 500 هزار تومان، ارسال رایگان است.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محصولات پیشنهادی -->
+            <section class="suggested-products">
+                <h2 class="section-title">محصولات پیشنهادی</h2>
+                <div class="products-grid">
+                    <!-- محصولات پیشنهادی -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- فوتر سایت -->
+
+    <script src="سبد.js"></script>
+    <script src="سبد.js"></script>
+</body>
+</html>

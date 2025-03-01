@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="درباره فروشگاه کفش امیری - تاریخچه، ارزش‌ها و محصولات ما">
+    <title>درباره ما/ فروشگاه کفش امیری</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="درباره ما.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- نوار اطلاع‌رسانی -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>ارسال رایگان برای خریدهای بالای 5,000,000 میلیون تومان | تضمین اصالت کالا</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1><a href="index.html">فروشگاه کفش امیری</a></h1>
+            </div>
+            
+            <!-- <div class="search-box">
+                <form action="#" method="get">
+                    <input type="text" placeholder="جستجوی محصولات..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div> -->
+            
+            <!-- <div class="header-actions">
+                <a href="login.html" class="user-account">
+                    <i class="fas fa-user"></i>
+                    <span>حساب کاربری</span>
+                </a> -->
+                
+                <div class="cart-icon">
+                    <a href="#" id="cart-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li class="dropdown">
+                        <a href="محصول.html">محصولات <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <!-- <a href="محصول.html?category=men">کفش مردانه</a>
+                            <a href="محصول.html?category=women">کفش زنانه</a>
+                            <a href="محصول.html?category=sport">کفش ورزشی</a>
+                            <a href="محصول.html?category=formal">کفش رسمی</a>
+                        </div>
+                    </li> -->
+                    <!-- <li><a href="تخفیف.html">تخفیف‌ها</a></li> -->
+                    <li><a href="درباره ما.html" class="active">درباره ما</a></li>
+                    <li><a href="تماس.html">تماس با ما</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- سبد خرید -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>سبد خرید</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <p>مجموع: <span id="total-price">0</span> تومان</p>
+            </div>
+            <button id="checkout-button">تکمیل خرید</button>
+        </div>
+    </div>
+
+    <!-- بنر صفحه درباره ما -->
+    <section class="about-banner">
+        <div class="container">
+            <div class="about-banner-content">
+                <h1>درباره فروشگاه کفش امیری</h1>
+                <p>از سال 1380 در خدمت مشتریان عزیز</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- بخش داستان ما -->
+        <section class="about-section our-story">
+            <div class="section-header">
+                <h2>داستان ما</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                   فروشگاه کفش امیری
+                </div>
+                <div class="about-text">
+                    <h3>از کجا شروع کردیم</h3>
+                    <p>فروشگاه کفش امیری در سال 1380 با یک مغازه کوچک در میدان آزادی کرمانشاه فعالیت خود را آغاز کرد. بنیانگذار فروشگاه، آقای سهراب امیری، با عشق و علاقه به کفش‌های با کیفیت و اصل، تصمیم گرفت تا بهترین برندهای کفش را به مشتریان ارائه دهد.</p>
+                    
+                    <p>در طول بیش از دو دهه فعالیت، همواره اصل بودن کالا و رضایت مشتری اولویت اصلی ما بوده است. امروز فروشگاه کفش امیری با داشتن شعبات متعدد در سطح استان کرمانشاه و همچنین فروشگاه آنلاین، به یکی از معتبرترین فروشگاه‌های کفش در غرب کشور تبدیل شده است.</p>
+                    
+                    <div class="milestone-counter">
+                        <div class="milestone">
+                            <!-- <span class="count">20+</span> -->
+                            <!-- <p>سال تجربه</p> -->
+                        </div>
+                        <!-- <div class="milestone">
+                            <span class="count">20</span>
+                            <p>شعبه فعال</p>
+                        </div>
+                        <div class="milestone">
+                            <span class="count">50K+</span>
+                            <p>مشتری راضی</p>
+                        </div>
+                        <div class="milestone">
+                            <span class="count">100+</span>
+                            <p>برند معتبر</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- بخش ارزش‌های ما -->
+        <section class="about-section our-values">
+            <div class="section-header">
+                <h2>ارزش‌های ما</h2>
+            </div>
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>کیفیت</h3>
+                    <p>ما تنها محصولات با کیفیت و اصل را به مشتریان خود ارائه می‌دهیم و هرگز کیفیت را فدای قیمت نمی‌کنیم.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>صداقت</h3>
+                    <p>صداقت در معامله و شفافیت در قیمت‌گذاری از اصول اساسی کار ماست.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>رضایت مشتری</h3>
+                    <p>رضایت مشتریان ما مهم‌ترین معیار موفقیت ماست و همواره تلاش می‌کنیم تا بهترین تجربه خرید را برای آن‌ها فراهم کنیم.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>نوآوری</h3>
+                    <p>همواره به دنبال بهبود خدمات و ارائه جدیدترین محصولات مطابق با ترندهای روز دنیا هستیم.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش ویژگی‌های محصولات -->
+        <section class="about-section product-features">
+            <div class="section-header">
+                <h2>ویژگی‌های محصولات ما</h2>
+            </div>
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>راحتی</h3>
+                        <p>کفش‌هایی که احساس راحتی و آسایش در طول روز فراهم می‌کنند. راحتی پاها در طول استفاده طولانی مدت از کفش بسیار اهمیت دارد.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>کیفیت ساخت</h3>
+                        <p>استفاده از مواد با کیفیت و فناوری‌های پیشرفته که ماندگاری و مقاومت کفش را افزایش می‌دهند.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>استایل و طراحی</h3>
+                        <p>طراحی زیبا و مدرن که با آخرین مد و ترندها همخوانی داشته باشد.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>سبکی و انعطاف‌پذیری</h3>
+                        <p>کفش‌هایی که وزن سبک و انعطاف‌پذیری مناسب داشته باشند تا فشار کمتری به پاها وارد شود.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>تنفس‌پذیری</h3>
+                        <p>استفاده از مواد تنفس‌پذیر که اجازه گردش هوا را داده و از تعریق بیش از حد پا جلوگیری می‌کند.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>محافظت و پشتیبانی</h3>
+                        <p>ساختاری که از پا محافظت کرده و پشتیبانی مناسب برای قوس کف پا فراهم می‌کند.</p>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2828b8">
+    <meta name="description" content="صفحه تماس با ما - ارسال پیام و اطلاعات تماس">
+    <title>تماس با ما/فروشگاه امیری</title>
+    <link rel="stylesheet" href="تماس با ما.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="contact-card">
+            <h1>تماس با ما</h1>
+            
+            <div class="contact-info">
+                <h2>اطلاعات تماس</h2>
+                <div class="info-item">
+                    <span class="icon">📱</span>
+                    <p>شماره تماس: <a href="tel:+9809900859556" dir="ltr">09900859556</a></p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <p>ایمیل: <a href="mailto:info@example.com">wwwamirimohammad942@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <p>آدرس: کرمانشاه، میدان آزادی، پاساژ پرویز طبقه2   فروشگاه کفش امیری</p>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <h2>ارسال پیام</h2>
+                <div id="formErrors" class="error-container" aria-live="polite"></div>
+                
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullname">نام و نام خانوادگی <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" placeholder="نام و نام خانوادگی خود را وارد کنید" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">شماره تماس <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید" required aria-required="true" pattern="^(09|\+989)\d{9}$">
+                        <small class="hint">مثال: ۰۹۱۲۳۴۵۶۷۸۹</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">ایمیل <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">موضوع <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="موضوع پیام خود را وارد کنید" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">پیام <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="پیام خود را بنویسید" required aria-required="true" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
+                            <label for="privacy">با <a href="privacy.html">قوانین حریم خصوصی</a> موافقم</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="تماس با ما.js"></script>
+</body>
+</html>

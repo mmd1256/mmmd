@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2828b8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- اضافه کردن این خط‌ها -->
+    <meta name="description" content="فروشگاه کفش امیری - عرضه کننده انواع کفش‌های اورجینال آدیداس">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- فونت وزیر -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+
+
+    <title>صفحه اصلی</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- اضافه کردن آیکون سبد خرید -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <!-- مودال سبد خرید -->
+<div class="cart-modal">
+    <div class="cart-header">
+        <h2 class="cart-title">سبد خرید</h2>
+        <button class="close-cart">&times;</button>
+    </div>
+    
+    <!-- <div class="cart-items">
+        محتوای سبد خرید اینجا به صورت داینامیک اضافه می‌شود
+    <! </div>
+    
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>مجموع:</span>
+            <span id="total-price">0</span>
+            <span>تومان</span>
+        </div>
+        <button id="checkout-button" class="checkout-btn">
+            <i class="fas fa-credit-card"></i>
+            تکمیل خرید
+        </button>
+    </div>
+</div> --> 
+
+<!-- کانتینر اعلان‌ها -->
+<div class="notification-container"></div>
+
+    
+    <div class="cart-items">
+        <!-- محتوای سبد خرید اینجا به صورت داینامیک اضافه می‌شود -->
+    </div>
+    
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>مجموع:</span>
+            <span id="total-price">0</span>
+            <span>تومان</span>
+        </div>
+        <button id="checkout-button" class="checkout-btn">
+            <i class="fas fa-credit-card"></i>
+            تکمیل خرید
+        </button>
+    </div>
+</div>
+
+<!-- کانتینر اعلان‌ها -->
+<div class="notification-container"></div>
+
+    <header>
+        <h1>فروشگاه کفش امیری</h1>
+        <nav>
+            <ul>
+                <li><a href="محصول.html">محصولات</a></li>
+                <li><a href="درباره ما.html">درباره ما</a></li>
+                <li><a href="تماس.html">تماس با ما</a></li>
+                <!-- اضافه کردن آیکون سبد خرید -->
+                <li class="cart-icon">
+                    <a href="#" id="cart-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- سبد خرید -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>سبد خرید</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <p>مجموع: <span id="total-price">0</span> تومان</p>
+            </div>
+            <button id="checkout-button">تکمیل خرید</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">صفحه اصلی ما</h1>
+
+    <main>
+    <section class="products">
+
+        <!-- ردیف اول -->
+       <div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="پوما.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>پوما کلاسیک</h3>
+    <p class="description">بسیار شیک و سبک مخصوص استفاده روزانه</p>
+    <div class="price-container">
+        <del class="old-price">3,500,000 تومان</del>
+        <p class="price">3,100,000تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="بالن.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>ادیداس بالنسیاگا</h3>
+    <p class="description">ادیداس  بالنسیاگا یک کفش خاص و جوان پسند و شیک</p>
+    <div class="price-container">
+        <del class="old-price">3,300.000تومان</del>
+        <p class="price">3,000,000 تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="نایک.رانینگ.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>نایک رانینگ</h3>
+    <p class="description"> نایک رانینگ مخصوص فعالیت های ورزشی</p>
+    <div class="price-container">
+        <del class="old-price">5,000,000 تومان</del>
+        <p class="price">4,500,000تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="ادیداس.رانینگ.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>ادیداس رانینگ</h3>
+    <p class="description">ادیداس رانینگ مخصوص ورزش های روزانه </p>
+    <div class="price-container">
+        <del class="old-price">5,000,000 تومان</del>
+        <p class="price">4,400,000تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="استابیل.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>ادیداس استابیل</h3>
+    <p class="description"> ادیداس استابیل مخصوص ورزش فوتسال</p>
+    <div class="price-container">
+        <del class="old-price">4,500,000تومان</del>
+        <p class="price">3,800.000 تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="فار.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>ادیداس فارماتون</h3>
+    <p class="description">ادیداس فارماتون مخصوص پیاده روی های روز مره</p>
+    <div class="price-container">
+        <del class="old-price">4,500,000 تومان</del>
+        <p class="price">4,000,000 تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نام محصول" data-price="100000">
+    <img src="ریبوک.jpg" data-src="پوما.jpg" alt="نام محصول">
+    <h3>ریبوک کلاسیک</h3>
+    <p class="description"> بسیار شیک و  سبک مخصوص استفاده روزانه</p>
+    <div class="price-container">
+        <del class="old-price">4,000.000 تومان</del>
+        <p class="price">3,000,000</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+<div class="product" data-id="1" data-name="نایک ایرفورس" data-price="100000">
+    <img src="نایک.jpg" data-src="پوما.jpg" alt="ایرفورس نایک">
+    <h3>نایک ایرفورس</h3>
+
+    <p class="description">نایک ایرفورس مخصوص استفاده های روزانه,شیک و راحت </p>
+    <div class="price-container">
+        <del class="old-price"> 4,000,000</del>
+        <p class="price">3,500,000تومان</p>
+    </div>
+    <button class="add-to-cart">
+        <i class="fas fa-cart-plus"></i>
+        افزودن به سبد خرید
+    </button>
+</div>
+    </section>
+</main>
+
+
+    <!-- فوتر مدرن -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <!-- بخش اصلی -->
+        <div class="footer-main">
+            <!-- اطلاعات فروشگاه -->
+            <div class="footer-section store-info">
+                <h3>فروشگاه کفش امیری</h3>
+                <p class="store-description">
+                    عرضه کننده انواع کفش‌های اورجینال با ضمانت اصالت کالا
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>09900859556</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>wwwamirimohammad942@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>کرمانشاه، میدان آزادی، پاساژ پرویز، طبقه دوم</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- لینک‌های سریع -->
+            <div class="footer-section quick-links">
+                <h3>دسترسی سریع</h3>
+                <ul>
+                    <li><a href="/">صفحه اصلی</a></li>
+                    <li><a href="محصول.html">محصولات</a></li>
+                    <li><a href="درباره ما.html">درباره ما</a></li>
+                    <li><a href="تماس.html">تماس با ما</a></li>
+                    <li><a href="/faq">سوالات متداول</a></li>
+                </ul>
+            </div>
+
+            <!-- شبکه‌های اجتماعی -->
+            <div class="footer-section social-media">
+                <h3>ما را دنبال کنید</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/mohamad.amiri_19" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://t.me/MMDW_2" class="social-link telegram">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://wa.me/09900859556" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- خبرنامه -->
+            <div class="footer-section newsletter">
+                <h3>عضویت در خبرنامه</h3>
+                <p>برای اطلاع از آخرین تخفیف‌ها و محصولات جدید، در خبرنامه ما عضو شوید.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- نقشه -->
+        <div class="footer-map">
+            <h3>موقعیت فروشگاه</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.2022872294676!2d47.09208650600136!3d34.3257232792732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffaed1a9edd1155%3A0x7023198547f18106!2z2qnZhNin2YbYqtix24wg2LTZh9uM2KfYrw!5e0!3m2!1sfa!2s!4v1740300665744!5m2!1sfa!2s"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- کپی‌رایت -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>© 2024 فروشگاه کفش امیری - تمامی حقوق محفوظ است.</p>
+            </div>
+            <!-- <div class="payment-methods">
+                <img src="path/to/payment-icons.png" alt="روش‌های پرداخت">
+            </div> -->
+        </div>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
+    <div class="notification-container"></div>
+</body>
+</html>

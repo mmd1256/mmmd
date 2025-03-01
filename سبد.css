@@ -1,0 +1,229 @@
+/* استایل‌های صفحه سبد خرید */
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* جدول سبد خرید */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th {
+    padding: 15px;
+    background: var(--light);
+    text-align: right;
+}
+
+.cart-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+/* اطلاعات محصول */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-details h3 {
+    margin-bottom: 5px;
+}
+
+.product-meta {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.product-meta span:not(:last-child)::after {
+    content: '|';
+    margin: 0 5px;
+}
+
+/* انتخاب تعداد */
+.quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.quantity-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+/* دکمه حذف */
+.remove-item {
+    border: none;
+    background: none;
+    color: var(--gray);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove-item:hover {
+    color: var(--danger);
+}
+
+/* عملیات سبد خرید */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.coupon {
+    display: flex;
+    gap: 10px;
+}
+
+.coupon input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.apply-coupon,
+.update-cart {
+    padding: 10px 20px;
+    background: var(--light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apply-coupon:hover,
+.update-cart:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+/* خلاصه سفارش */
+.order-summary {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.order-summary h3 {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.summary-row.total {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-button:hover {
+    background: var(--dark);
+}
+
+/* اعلان ارسال رایگان */
+.shipping-notice {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--light);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shipping-notice i {
+    color: var(--accent);
+}
+
+/* ریسپانسیو */
+@media (max-width: 992px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .coupon {
+        width: 100%;
+    }
+
+    .coupon input {
+        flex: 1;
+    }
+
+    .update-cart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
